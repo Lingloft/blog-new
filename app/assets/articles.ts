@@ -15,7 +15,7 @@ for (const [filename, _module] of Object.entries(articleModules)) {
     articles.push({
         title: title,
         author: author,
-        url: `/articles/${author}/${title}.html`
+        url: `/articles/${author}/${title}`
     });
 }
 export const authorUrls: AuthorUrl = articles.map(article => (
